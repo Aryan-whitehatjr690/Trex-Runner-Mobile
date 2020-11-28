@@ -70,7 +70,7 @@ function setup() {
 }
 
 function draw() {
-  //trex.debug = true;
+ 
   background(255);
   textSize(25)
   text("Score: "+ score, 30,50);
@@ -79,7 +79,7 @@ function draw() {
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
     
-    trex.debug=true;   
+  
   
     if(touches.length>0||keyDown("space") && trex.y >= height-120    ) {
       trex.velocityY = -12;
